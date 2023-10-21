@@ -1,5 +1,3 @@
-Section 13 Challenge
-==============
 
 For this challenge you are to develop the foundation for a program 
 for movie fanatics to keep track of what movies they have watched
