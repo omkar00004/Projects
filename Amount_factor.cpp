@@ -71,7 +71,7 @@ public:
     cout<<"Pennie : "<<pennie<<endl;
     }
 
-     int ask_user(){
+    int ask_user(){
     int num;
     cout<<"What Number you want to make into fractions : ";
     cin>>num;
