@@ -40,7 +40,7 @@ public:
         return this->cost=cost;
     }
     void Cost(){
-        cout<<"Cost : "<<(rooms*cost)<<endl;
+        cout<<"Cost : $"<<(rooms*cost)<<endl;
     }
     double Tax(){
         return (rooms*cost*tax);
@@ -85,23 +85,23 @@ cout<<"------------------------------------------------------------"<<endl;
     s.num_of_rooms(set_var1());
     s.cost_of_rooms(25);
     s.Cost();
-    cout<<"Tax : "<<s.Tax()<<endl;
-    cout<<"Cost(with Tax) : "<<s.Cost_tax()<<endl;
+    cout<<"Tax : $"<<s.Tax()<<endl;
+    cout<<"Cost(with Tax) : $"<<s.Cost_tax()<<endl;
     }
 
     void obj2(Large &l){
     l.num_of_rooms(set_var2());
     l.cost_of_rooms(35);
     l.Cost();
-    cout<<"Tax : "<<l.Tax()<<endl;
-    cout<<"Cost(with Tax) : "<<l.Cost_tax()<<endl;
+    cout<<"Tax : $"<<l.Tax()<<endl;
+    cout<<"Cost(with Tax) : $"<<l.Cost_tax()<<endl;
     }
 
     void total(Small &s,Large &l){
         // cout<<"---------------------------------------------------------------------------"<<endl;
         cout<<"==========================================================================="<<endl;
-        cout<<"Total Tax : "<<s.Small::Tax()+l.Large::Tax()<<endl;
-        cout<<"Total Estimate : "<<s.Small::Cost_tax()+l.Large::Cost_tax()<<endl; //Ambiguity
+        cout<<"Total Tax : $"<<s.Small::Tax()+l.Large::Tax()<<endl;
+        cout<<"Total Estimate : $"<<s.Small::Cost_tax()+l.Large::Cost_tax()<<endl; //Ambiguity
     }
 
 int main(){
